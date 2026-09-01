@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #marks{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><u>Student Profile Webpage</u></h1>
+    <table width="700px" align="center" >
+        <tr>
+            <td>
+                <h1 id="1"><i>Personal Details</i></h1>
+                <p>
+                    <b>Name: </b> Nitish Sharma <br />
+                    <b>Course: </b> MCA <br />
+                </p>
+            </td>
+            <td align="center">
+                <img src="./Images/shinchan.jpg" 
+        alt="Profile Photo"
+        height="200px"
+        />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2 id="3">Academic Details</h2>
+                <ul>
+                    <li>I did 10<sup>th</sup> class from <b>CBSE</b>, 12<sup>th</sup> from <b>HBSE</b></li>
+                    <li>From <i>KUK</i> university i did <b>BCA</b>, and now i am doing <mark>MCA from <b> <u>Geeta University.
+                            </u></b></mark></li>
+                </ul>
+            </td>
+            <td rowspan="2">
+                <h2>Skills</h2>
+                <p>
+                    <b>Technical Skills:</b>
+                <ol>
+                    <li>Programming Languages: </li>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <li>Softwares: </li>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Affinity</li>
+                        <li>Filmora</li>
+                    </ul>
+                </ol>
+                <p><b>Other Extra Skills: </b></p>
+                <ul>
+                    <li>Public Speaking(Learning)</li>
+                    <li>Video Editing</li>
+                    <li>Website Development(Learning)</li>
+                </ul>
+                </p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2 id="2">Projects:</h2>
+                <p>I did some of projects after BCA:</p>
+                <ul>
+                    <li>Website for e-commerse(It is currently working for clothing shop)</li>
+                    <li>Meme Page website(Shut down in 2024.)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="/submit" method="post">
+
+                    <fieldset>
+                        <legend><b>Personal Information</b></legend>
+
+                        <table >
+                                <tr>
+                                    <th scope="row">
+                                        <label for="first-name">First Name</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            id="first-name"
+                                            name="first_name"
+                                            required
+                                            autocomplete="given-name"
+                                        >
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="last-name">Last Name</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            id="last-name"
+                                            name="last_name"
+                                            required
+                                            autocomplete="family-name"
+                                        >
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="email">Email</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            required
+                                            autocomplete="email"
+                                        >
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="phone">Phone</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            autocomplete="tel"
+                                        >
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="birth-date">Date of Birth</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="date"
+                                            id="birth-date"
+                                            name="birth_date"
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="gender">Gender</label>
+                                    </th>
+                                    <td>
+                                        <label for="gender">Male</label>
+                                        <input type="radio" id="male" name="male" value="male">
+                                        <label for="gender">female</label>
+                                        <input type="radio" id="fmale" name="female" value="female">
+                                    </td>
+                                </tr>
+                            
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><b>Account Information</b></legend>
+
+                        <table>
+                        
+                                <tr>
+                                    <th scope="row">
+                                        <label for="username">Username</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="text"
+                                            id="username"
+                                            name="username"
+                                            required
+                                            minlength="4"
+                                            maxlength="30"
+                                        >
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">
+                                        <label for="password">Password</label>
+                                    </th>
+                                    <td>
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            name="password"
+                                            required
+                                            minlength="8"
+                                        >
+                                    </td>
+                                </tr>
+                            
+                        </table>
+                    </fieldset>
+
+                    <p align="center">
+                        <button type="submit">Create Account</button>
+                        <button type="reset">Reset</button>
+                    </p>
+
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <h2 align="center">Student Marks Table</h2>
+            <table border="1" width="550px" align="center" id="marks">
+                <tr>
+                    <th rowspan="2">S No.</th>
+                    <th colspan="3">Marks</th>
+                    <th rowspan="2">Total</th>
+                    <!-- <th>Roll No.</th> -->
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"><b>Class Average</b></td>
+                    <td><b>200</b></td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2 align="center">Links of other Profiles</h2>
+                <p align="center">
+                    <b>Github: </b> <a href="https://www.linkedin.com/in/nitish-sharma-38576a423/" target="_blank"> Nitish
+                        Github</a><br />
+                    <b>LinkedIn: </b> <a href="https://www.linkedin.com/in/nitish-sharma-38576a423/" target="_blank"> Nitish
+                        LinkedIn</a><br />
+                    <b>X Link: </b> <a href="https://x.com/Nitish_SharmaG" target="_blank"> Nitish Twitter</a><br />
+                    <b>Email: </b> <a href="mailto:Sharmahappy132103@gmail.com"> Sharmahappy132103@gmail.com</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p align="center">
+        <a href="#2">Academic Details</a> | 
+        <a href="#2">Project Details</a> | 
+        <a href="#1">Profile</a> | 
+        <a href="index.html">Seperate Portfolio</a>
+    </p>
+</body>
+</html>
